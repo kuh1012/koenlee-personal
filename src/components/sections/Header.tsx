@@ -148,7 +148,7 @@ export default function Header() {
       >
         This&apos;s
         {' '}
-        <ATypography textColor="primary.plainColor" href={details.contact.linkedin}>
+        <ATypography textColor="primary.plainColor">
           {`${details.name.first} ${details.name.last}`}
         </ATypography>
         {' '}

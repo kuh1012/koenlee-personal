@@ -62,7 +62,7 @@ export default function Resume() {
   const mobile = useMobileMode();
 
   const [descriptionEditable, setDescriptionEditable] = useState(false);
-  const [descriptionContent, setDescriptionContent] = useState('Enthusiastic Senior Full Stack Developer with a proven track record in developing solutions for prominent brands in web and mobile applications. Proficient in React/Next.js, React Native, Node.js, AWS and full stack development. Committed to driving innovation and delivering high-quality products. Eager to contribute to a mission-driven company, leveraging expertise to support growth and success.');
+  const [descriptionContent, setDescriptionContent] = useState('Enthusiastic Senior Software Engineer with a proven track record in developing solutions for prominent brands in web and mobile applications. Proficient in React/Next.js, React Native, Node.js, AWS and full stack development. Committed to driving innovation and delivering high-quality products. Eager to contribute to a mission-driven company, leveraging expertise to support growth and success.');
   const parsedDescriptionContent = useMemo(
     () => (marked.parse(descriptionContent) as string).replace(/<p>/g, '').replace(/<\/p>/g, ''),
     [descriptionContent],
@@ -93,7 +93,7 @@ export default function Resume() {
                 {`${details.name.first} ${details.name.last}`}
               </Typography>
               <Typography level="h6" fontWeight="lg" textColor="text.secondary" marginBottom={0.5}>
-                Senior Full Stack Developer
+                Senior Software Engineer
               </Typography>
               {descriptionEditable ? (
                 <Stack gap={1.5}>
